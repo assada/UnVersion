@@ -23,6 +23,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         this.saveDefaultConfig();
+        this.reloadConfig();
 
         ProtocolManager protocolManager = ProtocolLibrary.getProtocolManager();
         Bukkit.getLogger().info(String.format("[%s] - Enabled", getDescription().getName()));
